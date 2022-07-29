@@ -1,0 +1,87 @@
+{% block main_content %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load inlinecss %}
+{% inlinecss %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welcome</title>
+
+    <style>
+        body{
+            width:100% !important;
+            background-color: #ffffff;
+            margin:0;
+            padding:0;
+            min-width:100%;
+        }
+        .email-content {
+            background-color: #ffffff;
+            text-align: left;
+            line-height: 19px;
+            vertical-align: top;
+            color: #585549;
+            font-size: 14px;
+            font-family: "Arial, Helvetica, sans-serif";
+        }
+
+        .font-family {
+            font-family: "Arial, Helvetica, sans-serif";
+        }
+
+        .content-heading {
+            line-height: 32px;
+            font-size: 24px;
+            color: black;
+            font-weight: 400;
+            font-family: "Arial, Helvetica, sans-serif";
+        }
+
+        .content-width {
+            width: 90.4%;
+        }
+        table {
+            border: 0;
+        }
+
+    </style>
+</head>
+<body >
+    <table>
+        <tr>
+            <td  class="email-content">
+                <table class="font-family">
+                    <tr>
+                        <td class="email-content">
+                            <table class="font-family">
+                                <tr>
+                                    <td  class="content-width">
+                                        <table  class="font-family">
+                                            <tr>
+                                                <td  class="content-heading">
+                                                    Hi {{ user_name }},
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="email-content">
+                                                    Wellcome to EDS solutions {{user_name}}
+                                                </td>
+                                            </tr>
+                                            </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                    <!-- Footer can be put here-->
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </center>
+</body>
+</html>
+{% endinlinecss %}
+{% endblock %}

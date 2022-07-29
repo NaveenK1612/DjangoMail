@@ -1,0 +1,3 @@
+Hi {{user_name}},
+
+Wellcome to EDS solutions {{user_name}}
